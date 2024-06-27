@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 //The main function which is the starting point of all our apps.
 void main() {
   runApp(MyApp());
@@ -11,92 +12,44 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
 
+
       debugShowCheckedModeBanner: false,
+
       home:Scaffold(
+
         appBar: AppBar(
           backgroundColor: Colors.blueGrey,
           title: Center(child: Text('MY App', style: TextStyle(color: Colors.white),),),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.tealAccent,
         body: Center(
           child: SafeArea(
             child: Center(
               child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Container(
-                      height: 120,
-                      width: 150,
-                      color: Colors.yellow[700],
-                      child: Center(child:  Container(
-                        height: 60,
-                        width: 60,
-                        color: Colors.white,
-                        child: Center(
-                          child: Image(image: AssetImage('images/recycle.png'),),
-                        )
-                      ),
-                      ),
+                  CircleAvatar(
+                    backgroundImage: AssetImage('images/Portrait.jpeg'),
+
+                    radius: 50,
+                    backgroundColor: Colors.blue,
+
+                  ),
+                  SizedBox(
+                    height: 10,
                   ),
 
-                  Container(
-                    color: Colors.blueGrey[500],
-                    height: 120,
-                    width: 150,
 
-                    child:
-                       Center(
 
-                        child: Container(
-                          child: Center(
-                            child: Image(image: AssetImage('images/iOS-I-Am-Rich-App-Icon-Rounded.png'),)
-                          ),
-                          height: 60,
-                          width: 60,
-                          color: Colors.white,
 
-                        )
-                      )
-                    ),
-
-                  Container(
-                    color: Colors.black,
-                    height: 120,
-                    width: 150,
-
-                    child: Center(
-                      child: Container(
-                        height: 60,
-                        width: 60,
-                        color: Colors.white,
-                        child: Center(
-                          child: Text('HEYYY', style: TextStyle(color: Colors.black),),
-                        ),
-                      ),
-                    ),
-                  ),
-
-                  Container(
-
-                    color: Colors.blue,
-                    height: 120,
-                    width: 150,
-
-                    child: Center(
-                      child: Container(
-                        height: 60,
-                        width: 60,
-                        color: Colors.white,
-                        child: Center(
-                          child: Text('HEYYY', style: TextStyle(color: Colors.black),),
-                        ),
-                      ),
-                    ),
-                  ),
-
+                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48),)
 
 
                 ],
+
+
+
               )
             )
           ),
