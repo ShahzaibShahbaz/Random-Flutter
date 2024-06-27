@@ -24,9 +24,7 @@ class MyApp extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-
                   Container(
-
                       height: 120,
                       width: 150,
                       color: Colors.yellow[700],
