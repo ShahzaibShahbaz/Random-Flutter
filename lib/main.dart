@@ -58,7 +58,7 @@ class MyApp extends StatelessWidget {
                         )
                       )
                     ),
-SizedBox(height: 100,),
+
                   Container(
                     color: Colors.black,
                     height: 120,
