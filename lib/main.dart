@@ -18,10 +18,10 @@ class MyApp extends StatelessWidget {
       home:Scaffold(
 
         appBar: AppBar(
-          backgroundColor: Colors.blueGrey,
+          backgroundColor: Colors.greenAccent,
           title: Center(child: Text('My Profile', style: TextStyle(color: Colors.white),),),
         ),
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.teal,
         body: Center(
           child: SafeArea(
             child: Center(
@@ -38,11 +38,11 @@ class MyApp extends StatelessWidget {
                     height: 10,
                   ),
 
-                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48, fontFamily: 'Caveat'),),
+                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48, fontFamily: 'Caveat', color: Colors.white),),
 
 
 
-                  Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20, fontFamily: 'PlaywriteAUTAS'),),
+                  Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20, fontFamily: 'PlaywriteAUTAS', color: Colors.white),),
 
 SizedBox(height: 10,),
 
@@ -54,7 +54,7 @@ SizedBox(height: 10,),
 
                     child: Row(
                       children: [
-                        Icon(Icons.phone, size: 35, color: Colors.tealAccent,),
+                        Icon(Icons.phone, size: 35, color: Colors.teal,),
                         SizedBox(width: 20,),
                         Text('+923 211896779', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500, ), ),
                       ],
@@ -71,14 +71,12 @@ SizedBox(height: 10,),
                     child:
                     Row(
                       children: [
-                        Icon(Icons.email_rounded, size: 35, color: Colors.tealAccent,),
+                        Icon(Icons.email_rounded, size: 35, color: Colors.teal,),
                         SizedBox(width: 20,),
                         Text('shahzaibshahbaz@gmail.com', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500, ),)
                       ],
                     ),
-                  )
-
-
+                  ),
                 ],
 
 
