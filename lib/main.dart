@@ -38,11 +38,11 @@ class MyApp extends StatelessWidget {
                     height: 10,
                   ),
 
-                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48),),
+                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48, fontFamily: 'Caveat'),),
 
 
 
-                  Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20),),
+                  Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20, fontFamily: 'PlaywriteAUTAS'),),
 
 SizedBox(height: 10,),
 
@@ -56,7 +56,7 @@ SizedBox(height: 10,),
                       children: [
                         Icon(Icons.phone, size: 35, color: Colors.tealAccent,),
                         SizedBox(width: 20,),
-                        Text('+923 211896779', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500),),
+                        Text('+923 211896779', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500, ), ),
                       ],
                     ),
                   ),
