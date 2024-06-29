@@ -19,71 +19,45 @@ class MyApp extends StatelessWidget {
 
         appBar: AppBar(
           backgroundColor: Colors.greenAccent,
-          title: Center(child: Text('My Profile', style: TextStyle(color: Colors.white),),),
+          title: Center(child: Text('My Card', style: TextStyle(color: Colors.white),),),
         ),
         backgroundColor: Colors.teal,
         body: Center(
-          child: SafeArea(
-            child: Center(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  CircleAvatar(
-                    backgroundImage: AssetImage('images/Portrait.jpeg'),
-                    radius: 50,
-                    backgroundColor: Colors.blue,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                CircleAvatar(
+                  backgroundImage: AssetImage('images/Portrait.jpeg'),
+                  radius: 50,
+                ),
+                Text('Shahzaib Shahbaz', style: TextStyle(color: Colors.white, fontFamily: 'Caveat', fontSize: 40, fontWeight: FontWeight.bold),),
+                Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20, fontFamily: 'PlaywriteAUTAS', color: Colors.white, ),),
+                SizedBox(height: 20,
+                width: 250,
+                    child: Divider(color: Colors.teal[200],),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(Icons.phone, color: Colors.teal,),
+                    title: Text('+923 321 1896779', style: TextStyle(color: Colors.teal),),
                   ),
+                ),
 
-                  SizedBox(
-                    height: 10,
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
+                  child: ListTile(
+                    leading: Icon(Icons.email, color: Colors.teal,),
+                    title: Text('shahzaibshahbaz@gmail.com', style: TextStyle(color: Colors.teal),),
                   ),
+                ),
 
-                  Text('shahzaib shahbaz', style: TextStyle(fontSize: 48, fontFamily: 'Caveat', color: Colors.white),),
-
-
-
-                  Text('Computer Scientist', style: TextStyle(fontWeight: FontWeight.w300, fontSize: 20, fontFamily: 'PlaywriteAUTAS', color: Colors.white),),
-
-SizedBox(height: 10,),
-
-                  Container(
-                    color: Colors.white,
-                    height: 50,
-                    width: 400,
-                    padding: EdgeInsets.only(left: 15),
-
-                    child: Row(
-                      children: [
-                        Icon(Icons.phone, size: 35, color: Colors.teal,),
-                        SizedBox(width: 20,),
-                        Text('+923 211896779', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500, ), ),
-                      ],
-                    ),
-                  ),
-
-                  SizedBox(height: 20,),
-
-                  Container(
-                    color: Colors.white,
-                    height: 50,
-                    width: 400,
-                    padding: EdgeInsets.only(left: 15),
-                    child:
-                    Row(
-                      children: [
-                        Icon(Icons.email_rounded, size: 35, color: Colors.teal,),
-                        SizedBox(width: 20,),
-                        Text('shahzaibshahbaz@gmail.com', style: TextStyle(color: Colors.black, fontSize: 22, fontWeight: FontWeight.w500, ),)
-                      ],
-                    ),
-                  ),
-                ],
-
-
-
-              )
-            )
-          ),
+              ],
+            ),
+          )
         ),
         
       ),
