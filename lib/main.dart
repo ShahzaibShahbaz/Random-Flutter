@@ -1,12 +1,36 @@
+
+
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 //The main function which is the starting point of all our apps.
 void main() {
-  runApp(const MyApp());
+  runApp( MyApp());
 }
 
+class Shahzaib{
+  int ptr;
+  Shahzaib(){
+    this.ptr = 0;
+  }
+  int getter(){
+    int inti = 0;
+    for(int i = 0; i < 10; i++){
+      inti += i;
+    }
+    return ptr;
+  }
+}
+
+
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+   MyApp({super.key});
+  int counter = 0;
+  late Shahzaib shazy;
+
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -49,12 +73,24 @@ class MyApp extends StatelessWidget {
                 Card(
                   color: Colors.white,
                   margin: EdgeInsets.symmetric(vertical: 10, horizontal: 25),
-                  child: ListTile(
-                    leading: Icon(Icons.email, color: Colors.teal,),
-                    title: Text('shahzaibshahbaz@gmail.com', style: TextStyle(color: Colors.teal),),
-                  ),
-                ),
+                  child: Column(
+                    children: [
+                      ListTile(
+                        leading: Icon(Icons.email, color: Colors.teal,),
+                        title: Text('shahzaibshahbaz@gmail.com', style: TextStyle(color: Colors.teal),),
+                      ),
+                      ElevatedButton(onPressed: (){
 
+                        counter = shazy.getter();
+
+                      },
+                        child: Text('press counter $counter'),
+
+                      )
+                    ],
+                  )
+                ),
+                Text('$counter'),
               ],
             ),
           )
